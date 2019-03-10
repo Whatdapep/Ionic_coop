@@ -1,0 +1,85 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content padding>
+    <div class ="margin"></div>
+
+          <div align = "center" style="padding-bottom:35px; ">
+          <ion-thumbnail >
+            <ion-img src="https://amp.thisisinsider.com/images/5c5b3f81eb3ce83a9b1312b4-750-562.jpg" ></ion-img>
+          </ion-thumbnail>
+        </div>
+    
+        <div style="border-bottom:1px solid gray; "></div>
+        <!-- ------------------------------------------------------------------ -->
+        <div>
+             
+            <ion-button (click)="coll()" color = "success">
+              
+                <i class="fas fa-university fa-lg fa-fw"></i>
+                <label style="font-size: 0.5em;">การค้ำประกัน</label>
+            </ion-button>
+          
+      
+  
+          <ion-button (click)="gain()" color = "success">
+              
+              <i class="fas fa-university fa-lg fa-fw"></i>
+              <label style="font-size: 0.5em;">ผู้รับผลประโยชน์</label>
+          </ion-button>
+          
+        </div>
+        <!-- ---------------------------------------------------------- -->
+      <div class = "headtext">
+      <p> Name
+      </p>
+      </div> 
+      <div class = "maintext">
+      {{master.name}}
+      
+      </div> 
+      <div class = "headtext">
+      <p> Member Id
+      </p>
+      </div> 
+      <div class = "maintext">
+      {{master.mem_id}}
+      
+      </div>
+      <div class = "headtext">
+      <p> User Id
+      </p>
+      </div> 
+      <div class = "maintext">
+      {{master.user_id}}
+   
+      </div> 
+      <div class = "headtext">
+      <p> Date Born
+      </p>
+      </div> 
+      <div class = "maintext">
+      {{master.date_born}}
+     
+      </div> 
+      <div class = "headtext">
+      <p> Date Approve
+      </p>
+      </div> 
+      <div class = "maintext">
+   {{master.date_app}}
+      
+      </div> 
+      <div class = "headtext">
+      <p> Company
+      </p>
+      </div> 
+      <div class = "maintext">
+       {{master.company}}
+     
+      </div>      
+        
+</ion-content>
